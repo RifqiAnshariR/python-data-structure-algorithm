@@ -1,6 +1,11 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import heapq
 import numpy as np
-from convert_coordinate import cartesianToIndex, indexToCartesian
+from algorithm.convert_coordinate import cartesianToIndex, indexToCartesian
 
 class OpenSet:
     def __init__(self):
